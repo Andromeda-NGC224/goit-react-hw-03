@@ -1,0 +1,26 @@
+.boxContactCont {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contBtn {
+  border: 1px solid rgba(36, 35, 35, 0.2);
+  border-radius: 60px;
+  padding: 8px 16px;
+  cursor: pointer;
+  width: 100px;
+  height: 45px;
+  font-size: 14px;
+  margin-right: 8px;
+}
+.contBtn:hover,
+.contBtn:focus {
+  border: 1px solid rgba(0, 0, 0, 0.719);
+}
+.boxText {
+  margin-left: 8px;
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  width: 170px;
+}

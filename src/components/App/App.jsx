@@ -3,7 +3,7 @@ import ContactForm from "../ContactForm/ContactForm"
 import SearchBox from "../SearchBox/SearchBox"
 import ContactList from "../ContactList/ContactList"
 import { useState, useEffect } from "react"
-import './App.module.css'
+import css from './App.module.css'
 import { nanoid } from "nanoid"
 
 
@@ -45,8 +45,8 @@ export default function App() {
 
 
   return (
-    <div>
-  <h1>Phonebook</h1>
+    <div className={css.container}>
+  <h1 className={css.title}>Phonebook</h1>
       <ContactForm onAdd={addContact} />
   <SearchBox value={search} onSearch={setSearch} />
       <ContactList items={visibleContacts} onDelete={deleteContact} />
